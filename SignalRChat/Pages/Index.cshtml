@@ -7,25 +7,29 @@
 <div class="container">
         <div class="row">&nbsp;</div>
         <div class="row">
-            <div class="col-2">User</div>
-            <div class="col-4"><input type="text" id="userInput" /></div>
+            @**@
+            <label for="exampleInputEmail1" class="py-1" >User Name</label>
+            <div class="input-group">
+                
+                <input type="email" class="form-control" id="userInput"/>
+             </div>
         </div>
         <div class="row">
-            <div class="col-2">Message</div>
-            <div class="col-4"><input type="text" id="messageInput" /></div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <div class="col-6">
-                <input type="button" id="sendButton" value="Send Message" />
+            <label for="exampleInputEmail1" class="py-1">Message</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="messageInput" placeholder="Message" aria-label="Message" aria-describedby="sendButton">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button" id="sendButton">Send</button>
+                </div>
             </div>
         </div>
+        <div class="row">&nbsp;</div>
     </div>
     <div class="row">
         <div class="col-12">
             <hr />
         </div>
-    </div>
+    </div> 
     <div class="row">
         <div class="col-6">
             <ul id="messagesList"></ul>
